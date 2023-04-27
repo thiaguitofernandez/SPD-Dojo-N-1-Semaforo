@@ -72,7 +72,7 @@ Con estas dos funciones los led se prenden y se apagan.Estas ocurren en diferent
 
 
 ## Link al proyecto :eggplant:
-- [proyecto](https://www.tinkercad.com/things/hBh0UVomjyM-prueba-tpgrupal/editel?sharecode=E750hfyh9kLGIuqLQaVF5h5EdYSLmSpoakgl8z9V1h4)
+- [proyecto](https://www.tinkercad.com/things/5RGOrtukuG0)
 
 
 
