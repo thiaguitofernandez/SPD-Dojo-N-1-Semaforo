@@ -1,5 +1,7 @@
 # Ejercicio Dojo 1
 
+##Alumno: Benjamin Andres Aguilera
+
 ## Integrantes 
 - Benjamin Andres Aguilera
 - Pablo Nicolas Aguilar
