@@ -9,7 +9,7 @@
 
 
 ## Proyecto: Semaforo
-![Tinkercad](./img/ContadorBinario.png)
+![Tinkercad](./img/image.png)
 
 
 ## Descripción
