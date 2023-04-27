@@ -16,6 +16,7 @@
 La funcion de este trabajo es crear un semaforo que sea utilizable por gente vidente y no vidente.
 
 ## Función principal
+~~~
 #define buzzer 8
 #define LED_ROJO 13
 #define LED_AMARILLO 12
@@ -28,9 +29,10 @@ void setup()
   pinMode(LED_AMARILLO, OUTPUT);
   pinMode(LED_VERDE, OUTPUT);
 }
+~~~
 
 Definimos los LEDs de colores que vamos a utilizar y el buzzer para los no videntes. Despues hacemos el void setup para que la señal salga de los pins definidos.
-
+~~~
 void loop() {
   prendeLed(LED_VERDE,30000);
   delay(15000);
@@ -42,7 +44,7 @@ void loop() {
   noVidentes(30000,500,500,500);
   apagaLed(LED_ROJO,1000);
 }
-
+~~~
 Esta funcion funciona para crear la funcion del semaforo, loopeando infinitamente. La luz verde dura 45 segundos, la luz amarilla dura 15, y la luz roja dura 30 segundos. Tambien definimos el tono y la duracion del buzzer, que suena 1 vez cada dos segundos cuando el semaforo esta en amarillo con un tono suave, y 1 vez por segundo en un tono fuerte.
 
 ## Link al proyecto :eggplant:
