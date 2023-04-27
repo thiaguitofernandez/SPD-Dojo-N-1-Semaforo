@@ -1,55 +1,52 @@
-# Ejemplo Documentación Dojos
-![Tinkercad](./img/ArduinoTinkercad.jpg)
-
+# Ejercicio Dojo 1
 
 ## Integrantes 
-- Esteban Marcelo Quiroz  
+- Benjamin Andres Aguilera
+- Pablo Nicolas Aguilar
+- Thiago Fernandez Lado
+- Josue Damacio
 
 
-## Proyecto: Contador binario.
+
+## Proyecto: Semaforo
 ![Tinkercad](./img/ContadorBinario.png)
 
 
 ## Descripción
-En este parrafo deberan describir que funcion cumple su proyecto. Que solucion esta ofreciendo.
+La funcion de este trabajo es crear un semaforo que sea utilizable por gente vidente y no vidente.
 
 ## Función principal
-Esta funcion se encarga de encender y apagar los leds.
-
-B0, B1, B2, B3 son #define que utilizamos para agregar los leds, asociandolo a pines de la placa arduino.
-
-(Breve explicación de la función)
-
-~~~ C (lenguaje en el que esta escrito)
-void EncenderBinario(int estado3, int estado2,int estado1,int estado0)
+#define buzzer 8
+#define LED_ROJO 13
+#define LED_AMARILLO 12
+#define LED_VERDE 11
+int contador = 0;
+void setup()
 {
-  digitalWrite(B3,estado3);
-  digitalWrite(B2,estado2);
-  digitalWrite(B1,estado1);
-  digitalWrite(B0,estado0);
+  pinMode(buzzer, OUTPUT);
+  pinMode(LED_ROJO, OUTPUT);
+  pinMode(LED_AMARILLO, OUTPUT);
+  pinMode(LED_VERDE, OUTPUT);
 }
-~~~
 
-## :robot: Link al proyecto
-- [proyecto](https://www.tinkercad.com/things/aOYiibnDjWu)
-## :tv: Link al video del proceso
-- [video](https://www.youtube.com/watch?v=VyGjE8kx-O0)
+Definimos los LEDs de colores que vamos a utilizar y el buzzer para los no videntes. Despues hacemos el void setup para que la señal salga de los pins definidos.
 
----
-### Fuentes
-- [Consejos para documentar](https://www.sohamkamani.com/how-to-write-good-documentation/#architecture-documentation).
+void loop() {
+  prendeLed(LED_VERDE,30000);
+  delay(15000);
+  apagaLed(LED_VERDE,0);
+  prendeLed(LED_AMARILLO,0);
+  noVidentes(5000,100,500,2000);
+  apagaLed(LED_AMARILLO,1000);
+  prendeLed(LED_ROJO,0);
+  noVidentes(30000,500,500,500);
+  apagaLed(LED_ROJO,1000);
+}
 
-- [Lenguaje Markdown](https://markdown.es/sintaxis-markdown/#linkauto).
+Esta funcion funciona para crear la funcion del semaforo, loopeando infinitamente. La luz verde dura 45 segundos, la luz amarilla dura 15, y la luz roja dura 30 segundos. Tambien definimos el tono y la duracion del buzzer, que suena 1 vez cada dos segundos cuando el semaforo esta en amarillo con un tono suave, y 1 vez por segundo en un tono fuerte.
 
-- [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
-
-- [Tutorial](https://www.youtube.com/watch?v=oxaH9CFpeEE).
-
-- [Emojis](https://gist.github.com/rxaviers/7360908).
-
----
-
-
+## Link al proyecto :eggplant:
+- [proyecto](https://www.tinkercad.com/things/hBh0UVomjyM-prueba-tpgrupal/editel?sharecode=E750hfyh9kLGIuqLQaVF5h5EdYSLmSpoakgl8z9V1h4)
 
 
 
