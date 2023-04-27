@@ -3,7 +3,7 @@
 ## Integrantes 
 - Benjamin Andres Aguilera
 - Pablo Nicolas Aguilar
-- Thiago Fernandez Lado
+- Thiago Patricio Fernandez Lado
 - Josue Damacio
 
 
