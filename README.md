@@ -57,6 +57,18 @@ void noVidentes(int tiempo, int potencia, int suena, int espera) {
 }
 ~~~
 Para los no videntes utilizamos la funcion noVidentes en la cual introducimos por parametro el tono, la duracion del buzzer cada cuanto suena y el timpo total durante el cual el semaforo se encuentra en cada color.
+~~~
+void prendeLed(int led, int  tiempo){
+    digitalWrite(led, HIGH);//encender LED
+      delay(tiempo); // esperar por tiempo
+  }
+
+void apagaLed(int led,int tiempo){
+      digitalWrite(led, LOW);//endender LED
+    delay(tiempo); // esperar por tiempo
+}
+~~~
+Con estas dos funciones le indicamos por parametros a los LED cuanto tiempo deben estar prendidos y apagados. Es utilizada en el codigo principal para cumplir el funcionamiento del semaforo.
 
 ## Link al proyecto :eggplant:
 - [proyecto](https://www.tinkercad.com/things/hBh0UVomjyM-prueba-tpgrupal/editel?sharecode=E750hfyh9kLGIuqLQaVF5h5EdYSLmSpoakgl8z9V1h4)
